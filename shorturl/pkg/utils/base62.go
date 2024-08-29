@@ -18,7 +18,7 @@ func ToBase10(str string) int64 {
 	for _, s := range str {
 		index := strings.IndexRune(chars, s)
 		res = res*62 + int64(index)
-		res += 1
+
 	}
 	return res
 }

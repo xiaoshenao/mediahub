@@ -1,0 +1,19 @@
+Server:
+  IP: 0.0.0.0
+  Port: 50051
+Redis:
+  Host: "192.168.204.134"
+  Port: 6379
+  Pwd: ""
+Mysql:
+  DSN: "root:mdzz9014@tcp(192.168.204.134:3306)/mediahub?collation=utf8mb4_unicode_ci&charset=utf8mb4"
+  MaxLifeTime: 3600
+  MaxOpenConn: 10
+  MaxIdleConn: 10
+Log:
+  # panic,fatal,error,warn,info,debug,trace
+  Level: "info"
+  LogPath: "runtime/logs/mediahub.log"
+
+
+

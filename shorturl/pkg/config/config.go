@@ -7,10 +7,9 @@ import (
 )
 
 type Config struct {
-	Http struct {
+	Server struct {
 		IP   string
 		Port int
-		Mode string
 	}
 	Mysql struct {
 		DSN         string
@@ -27,12 +26,6 @@ type Config struct {
 		Level   string
 		LogPath string `mapstructure:"logPath"`
 	} `mapstructure:"log"`
-	Cos struct {
-		SecretId  string
-		SecretKey string
-		BucketUrl string
-		CDNDomain string
-	}
 	DependOn struct {
 		ShortUrl struct {
 			Address     string
